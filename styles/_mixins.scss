@@ -1,0 +1,6 @@
+//----------------------------------------
+// Animation
+//----------------------------------------
+@mixin transition($property: all, $timing: .2s, $animation: ease-out) {
+	transition: $property $timing $animation;
+}

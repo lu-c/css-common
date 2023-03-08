@@ -1,0 +1,47 @@
+/**
+ * These docs are generated using <a href="https://github.com/straker/livingcss/">LivingCSS</a>.
+ * The documentation on that repo is pretty good.
+ * @section About
+ * @page Help
+ */
+
+/**
+ * @section Custom Tags
+ * @page Help
+ */
+
+/**
+ * `@classes ${sectionName} - ${classlist}`<br>
+ * provide a list of classes that you want to add to the section container's html.
+ * For example, to add the class "error" to this generated section, the javadoc should look like:<br>
+ * `* @section @classes`<br>
+ * `* @sectionof Custom Tags`<br>
+ * `* @classes Custom Tags.@classes - error`
+ * @section @classes
+ * @sectionof Custom Tags
+ */
+
+/**
+ * `@color {${hexValue}} ${variableName} - ${sectionName}`<br>
+ * renders a special block for visualizing colors.<br>
+ * Example:<br>
+ * `* @color {#FFF} $color-white - Custom Tags.@color`
+ * @section @color
+ * @sectionof Custom Tags
+ */
+
+/**
+ * `@tablerow ${sectionName} - ${columnValue}`<br>
+ * The first instance of @tablerow will instantiate the table, and use the values to generate the table 
+ * headers. Each subsequent declaration will append a new tablerow to a table with the same sectionName.
+ * `${columnValue}` accepts a list strings separated by a `|`.<br>
+ * Example: <br>
+ * `* section @tablerow`<br>
+ * `* @tablerow Custom Tags.@tablerow - first | second`<br>
+ * `* @tablerow Custom Tags.@tablerow - foo | bar`<br>
+ * 
+ * @section @tablerow
+ * @sectionof Custom Tags
+ * @tablerow Custom Tags.@tablerow - first | second
+ * @tablerow Custom Tags.@tablerow - foo | bar
+ */

@@ -1,0 +1,43 @@
+<div class="livingcss__section-description {{classes}}">{{{description}}}</div>
+
+{{#if colors}}
+	{{#each colors}}
+	<div class="tile tile-styleguide {{classes}}">
+		<div class="color-example" value="{{value}}" style="background-color: {{value}}">
+			{{name}}
+		</div>
+		<b>Hex:</b> {{value}}
+	</div>
+	{{/each}}
+{{else}}
+	{{#if table}}
+		<table class="table table-striped" style="margin-bottom: 50px">
+			{{#each table}}
+				{{#if @first}}
+					<tr>
+						{{#each columns}}
+							<th {{{td}}}>{{{html}}}</th>
+						{{/each}}
+					</tr>
+
+				{{else}}
+					<tr>
+						{{#each columns}}
+							<td {{{td}}}>{{{html}}}</td>
+						{{/each}}
+					</tr>
+				{{/if}}
+			{{/each}}
+		</table>
+	{{/if}}
+
+	{{#if example}}
+		<livingcss-example>{{{example.description}}}</livingcss-example>
+	{{/if}}
+
+	{{#if code}}
+	<div class="livingcss__section-markup">
+		<pre class="livingcss__section-code"><code class="language-{{code.type}}">{{code.description}}</code></pre>
+	</div>
+	{{/if}}
+{{/if}}

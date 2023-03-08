@@ -1,0 +1,86 @@
+.livingcss__section > h1,
+/* Headings */
+
+h1.livingcss__article-title {
+	font-size: 29px;
+}
+
+.livingcss__section > h2 {
+	font-size: 20px;
+}
+
+.livingcss__section > h3 {
+	font-size: 18px;
+}
+
+.livingcss .livingcss__article + .livingcss__article {
+	margin-top: 30px;
+}
+
+.language-markup {
+	line-height: normal !important;
+}
+
+/* Tables */
+.livingcss__section .table td {
+	padding: 8px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+
+/* Tiles */
+.tile-container.tile-styleguide-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.tile.tile-styleguide {
+	width: 125px;
+	height: 150px;
+	display: inline-block;
+	margin: 10px;
+	padding: 20px;
+	text-align: center;
+	background-color: #f5f5f5;
+	border-radius: 10px;
+	position: relative;
+	font-weight: normal;
+}
+
+.tile.tile-styleguide:hover {
+	background-color: #f5f5f5;
+}
+
+.tile.tile-styleguide.tile-medium {
+	width: 250px;
+}
+
+.tile.tile-styleguide.tile-large {
+	width: 440px;
+	text-align: left;
+}
+
+/* Colors */
+#colors .tile.tile-styleguide {
+	border-radius: 10px;
+	width: 110px;
+	text-align: left;
+	padding: 5px;
+	height: auto;
+}
+
+.color-example {
+	height: 100px;
+	width: 100%;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5px;
+	font-size: 13px;
+	font-weight: normal;
+}
+
+#colors .tile.tile-dark .color-example {
+	color: #fff;	
+}
